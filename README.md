@@ -8,7 +8,7 @@ The bellow example is used to create an IAM instance role for a Vault KMS key ac
 
 ```hcl
 module "vault_unseal" {
-  source      = "git+https://github.com/plasmops/terraform-aws-kms-unseal"
+  source      = "git::https://github.com/plasmops/terraform-aws-kms-unseal"
   name_prefix = "${module.project.id}"
 
   create_kms_key = true
